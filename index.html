@@ -9,56 +9,62 @@
 </head>
 <body>
 
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button onclick="changeLanguage('en')">🇬🇧 English</button>
+        <button onclick="changeLanguage('fil')">🇵🇭 Filipino</button>
+    </div>
+
     <!-- HERO SECTION -->
     <header class="hero">
         <nav>
             <h1 class="logo">MyBrand</h1>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#features" data-lang="features">Features</a></li>
+                <li><a href="#pricing" data-lang="pricing">Pricing</a></li>
+                <li><a href="#testimonials" data-lang="testimonials">Testimonials</a></li>
+                <li><a href="#contact" data-lang="contact">Contact</a></li>
             </ul>
         </nav>
         <div class="hero-content">
-            <h1>AI-Powered Landing Page</h1>
-            <p>Build and deploy a website in minutes, powered by AI.</p>
-            <a href="#features" class="cta-button">Learn More</a>
+            <h1 data-lang="hero-title">AI-Powered Landing Page</h1>
+            <p data-lang="hero-text">Build and deploy a website in minutes, powered by AI.</p>
+            <a href="#features" class="cta-button" data-lang="learn-more">Learn More</a>
         </div>
     </header>
 
     <!-- FEATURES SECTION -->
     <section id="features">
-        <h2>Why Choose Us?</h2>
+        <h2 data-lang="features">Why Choose Us?</h2>
         <div class="features-container">
             <div class="feature fade-in">
-                <h3>🚀 Fast & Free</h3>
-                <p>Instantly deploy a landing page using AI.</p>
+                <h3>🚀 <span data-lang="fast-free">Fast & Free</span></h3>
+                <p data-lang="feature-1">Instantly deploy a landing page using AI.</p>
             </div>
             <div class="feature fade-in">
-                <h3>🎨 Fully Customizable</h3>
-                <p>Modify text, colors, and layout easily.</p>
+                <h3>🎨 <span data-lang="customizable">Fully Customizable</span></h3>
+                <p data-lang="feature-2">Modify text, colors, and layout easily.</p>
             </div>
             <div class="feature fade-in">
-                <h3>🌐 Hosted on GitHub</h3>
-                <p>Reliable, free, and secure hosting.</p>
+                <h3>🌐 <span data-lang="secure-hosting">Hosted on GitHub</span></h3>
+                <p data-lang="feature-3">Reliable, free, and secure hosting.</p>
             </div>
         </div>
     </section>
 
     <!-- PRICING SECTION -->
     <section id="pricing">
-        <h2>Pricing Plans</h2>
+        <h2 data-lang="pricing">Pricing Plans</h2>
         <div class="pricing-container">
             <div class="pricing-card fade-in">
-                <h3>Starter</h3>
+                <h3 data-lang="starter">Starter</h3>
                 <p>$0 / month</p>
                 <ul>
-                    <li>✅ Basic Features</li>
-                    <li>✅ Free Hosting</li>
-                    <li>❌ Premium Support</li>
+                    <li>✅ <span data-lang="basic-features">Basic Features</span></li>
+                    <li>✅ <span data-lang="free-hosting">Free Hosting</span></li>
+                    <li>❌ <span data-lang="no-support">No Premium Support</span></li>
                 </ul>
-                <a href="#" class="cta-button">Get Started</a>
+                <a href="#" class="cta-button" data-lang="get-started">Get Started</a>
             </div>
             <div class="pricing-card fade-in">
                 <h3>Pro</h3>
@@ -83,28 +89,18 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section id="testimonials">
-        <h2>What Our Users Say</h2>
-        <div class="testimonials-container">
-            <div class="testimonial fade-in">
-                <p>"This AI-powered site builder saved me hours of work!"</p>
-                <h3>- Alex R.</h3>
-            </div>
-            <div class="testimonial fade-in">
-                <p>"The easiest way to launch a professional website fast!"</p>
-                <h3>- Jamie S.</h3>
-            </div>
-            <div class="testimonial fade-in">
-                <p>"Affordable, fast, and super easy to use. Highly recommend!"</p>
-                <h3>- Taylor W.</h3>
-            </div>
-        </div>
+    <!-- NEWSLETTER SIGNUP -->
+    <section id="newsletter">
+        <h2 data-lang="newsletter">Subscribe to Our Newsletter</h2>
+        <form action="https://YOUR_MAILCHIMP_FORM_URL" method="POST">
+            <input type="email" name="EMAIL" placeholder="Enter your email" required>
+            <button type="submit" data-lang="subscribe">Subscribe</button>
+        </form>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2 data-lang="contact">Contact Us</h2>
         <form id="contact-form">
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
@@ -118,6 +114,9 @@
     <footer>
         <p>&copy; 2025 MyBrand. All rights reserved.</p>
     </footer>
+
+    <!-- Live Chat Widget (Tawk.to) -->
+    <script async src="https://embed.tawk.to/YOUR_TAWKTO_ID/1"></script>
 
 </body>
 </html>
