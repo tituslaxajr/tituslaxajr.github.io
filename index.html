@@ -5,34 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Landing Page</h1>
-        <p>Your AI-powered website in minutes.</p>
-        <a href="#contact" class="cta-button">Get Started</a>
+    <header class="hero">
+        <nav>
+            <h1 class="logo">MyBrand</h1>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>AI-Powered Landing Page</h1>
+            <p>Build and deploy a website in minutes, powered by AI.</p>
+            <a href="#features" class="cta-button">Learn More</a>
+        </div>
     </header>
 
     <section id="features">
         <h2>Why Choose Us?</h2>
-        <div class="feature">
-            <h3>🚀 Fast & Free</h3>
-            <p>Instantly deploy a landing page with AI-generated content.</p>
-        </div>
-        <div class="feature">
-            <h3>🎨 Fully Customizable</h3>
-            <p>Edit colors, text, and layout easily.</p>
-        </div>
-        <div class="feature">
-            <h3>🌐 Hosted on GitHub</h3>
-            <p>Reliable and free hosting using GitHub Pages.</p>
+        <div class="features-container">
+            <div class="feature fade-in">
+                <h3>🚀 Fast & Free</h3>
+                <p>Instantly deploy a landing page using AI.</p>
+            </div>
+            <div class="feature fade-in">
+                <h3>🎨 Fully Customizable</h3>
+                <p>Modify text, colors, and layout easily.</p>
+            </div>
+            <div class="feature fade-in">
+                <h3>🌐 Hosted on GitHub</h3>
+                <p>Reliable, free, and secure hosting.</p>
+            </div>
         </div>
     </section>
 
-    <footer id="contact">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide cutting-edge AI solutions to help businesses launch digital experiences quickly and effortlessly.</p>
+    </section>
+
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: your@email.com</p>
-        <p>Follow us on <a href="#">Social Media</a></p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-response"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MyBrand. All rights reserved.</p>
     </footer>
 </body>
 </html>
