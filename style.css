@@ -1,8 +1,8 @@
 /* General Styles */
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #f2e4e4;
-    color: #191919;
+    background-color: #ffffff;
+    color: #000;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -11,7 +11,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
-    color: #af2d2d;
+    color: #ff0000;
 }
 
 a {
@@ -21,39 +21,26 @@ a {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #191919 50%, #af2d2d 50%);
+    background: #000;
     color: white;
     padding: 100px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: left;
 }
 
-.hero-content {
-    max-width: 600px;
-    padding: 20px;
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.hero img {
-    max-width: 250px;
-    border-radius: 50%;
-    margin-right: 30px;
-}
-
-/* CTA Button */
 .cta-button {
-    background: #7b1919;
+    background: red;
     color: white;
     padding: 12px 24px;
     border-radius: 30px;
-    font-weight: bold;
     transition: all 0.3s;
 }
 
 .cta-button:hover {
-    background: #af2d2d;
+    background: #ff4d4d;
     transform: scale(1.05);
 }
 
@@ -62,19 +49,12 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: #191919;
-    color: white;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 15px;
-}
-
-.nav-links a {
-    color: white;
-    font-weight: 500;
 }
 
 /* Sections */
@@ -91,7 +71,7 @@ section {
 }
 
 .skill-card {
-    background: #7b1919;
+    background: red;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -120,17 +100,17 @@ section {
 
 /* Contact */
 .social-icons a {
-    color: #af2d2d;
+    color: red;
     font-size: 24px;
     margin: 0 10px;
 }
 
 /* Dark Mode */
 .dark-mode {
-    background-color: #191919;
+    background-color: #000;
     color: white;
 }
 
 .dark-mode h1, .dark-mode h2, .dark-mode h3 {
-    color: #af2d2d;
+    color: red;
 }
