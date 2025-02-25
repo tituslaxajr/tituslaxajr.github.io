@@ -1,17 +1,68 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     scroll-behavior: smooth;
+    background-color: #f8f9fa;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Language Selector */
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.language-selector button {
+    border: none;
+    background: #007bff;
+    color: white;
+    padding: 8px 16px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.language-selector button:hover {
+    background: #0056b3;
+}
+
+/* Hero Section */
 .hero {
     background: linear-gradient(90deg, #007bff, #00c3ff);
     color: white;
-    padding: 60px 20px;
+    padding: 80px 20px;
+    text-align: center;
 }
 
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff4081;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #e6006b;
+}
+
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,35 +82,156 @@ nav {
     font-size: 18px;
 }
 
-.cta-button {
-    display: inline-block;
-    background: #ff4081;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-section {
+/* Features Section */
+#features {
     padding: 60px 20px;
+    background-color: white;
 }
 
-.pricing-container, .testimonials-container {
+.features-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.pricing-card, .testimonial {
+.feature {
     background: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
+    width: 280px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Pricing Section */
+#pricing {
+    background: #007bff;
+    color: white;
+    padding: 60px 20px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    padding: 5px 0;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+/* Newsletter Section */
+#newsletter {
+    padding: 60px 20px;
+    background: #ff4081;
+    color: white;
+}
+
+#newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#newsletter input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#newsletter button {
+    background: white;
+    color: #ff4081;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background: #e6006b;
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
 footer {
     background: #222;
     color: white;
@@ -76,4 +248,21 @@ footer {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .features-container, .pricing-container, .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card, .feature, .testimonial {
+        width: 90%;
+    }
 }
