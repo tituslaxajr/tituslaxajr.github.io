@@ -3,107 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Landing Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Titus Jr Laxa - UX/UI Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Language Selector -->
-    <div class="language-selector">
-        <button onclick="changeLanguage('en')">🇬🇧 English</button>
-        <button onclick="changeLanguage('fil')">🇵🇭 Filipino</button>
-    </div>
-
     <!-- HERO SECTION -->
     <header class="hero">
         <nav>
-            <h1 class="logo">MyBrand</h1>
+            <h1 class="logo">Titus Jr Laxa</h1>
             <ul class="nav-links">
-                <li><a href="#features" data-lang="features">Features</a></li>
-                <li><a href="#pricing" data-lang="pricing">Pricing</a></li>
-                <li><a href="#testimonials" data-lang="testimonials">Testimonials</a></li>
-                <li><a href="#contact" data-lang="contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle">🌙</button></li>
             </ul>
         </nav>
         <div class="hero-content">
-            <h1 data-lang="heroTitle">AI-Powered Landing Page</h1>
-            <p data-lang="heroText">Build and deploy a website in minutes, powered by AI.</p>
-            <a href="#features" class="cta-button" data-lang="learnMore">Learn More</a>
+            <h1>Bringing problems their worst nightmare.</h1>
+            <p>UX/UI Designer solving design-related problems before breakfast and after dinner.</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
         </div>
     </header>
 
-    <!-- FEATURES SECTION -->
-    <section id="features">
-        <h2 data-lang="features">Why Choose Us?</h2>
-        <div class="features-container">
-            <div class="feature fade-in">
-                <h3><i class="fas fa-bolt"></i> <span data-lang="fastFree">Fast & Free</span></h3>
-                <p data-lang="feature1">Instantly deploy a landing page using AI.</p>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I have my Masters in Christian Leadership and Visual Arts. I know it's not the kind of mix that would seem to go well together. However, I'm a theologian who applies his theology in designs. No, I don't paint crosses on my hero sections, but I try to apply what is true, good, and beautiful in my work - so that the one who asks me to design will be thankful and fruitful.</p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+        <div class="skills-container">
+            <div class="skill-card">UX/UI Design</div>
+            <div class="skill-card">Integrating Social Media Visual Campaigns</div>
+            <div class="skill-card">Figma</div>
+            <div class="skill-card">Adobe XD</div>
+            <div class="skill-card">Photoshop</div>
+            <div class="skill-card">Illustrator</div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Name 1</h3>
+                <p>Project description goes here.</p>
             </div>
-            <div class="feature fade-in">
-                <h3><i class="fas fa-paint-brush"></i> <span data-lang="customizable">Fully Customizable</span></h3>
-                <p data-lang="feature2">Modify text, colors, and layout easily.</p>
-            </div>
-            <div class="feature fade-in">
-                <h3><i class="fas fa-shield-alt"></i> <span data-lang="secureHosting">Hosted on GitHub</span></h3>
-                <p data-lang="feature3">Reliable, free, and secure hosting.</p>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Name 2</h3>
+                <p>Project description goes here.</p>
             </div>
         </div>
     </section>
 
-    <!-- PRICING SECTION -->
-    <section id="pricing">
-        <h2 data-lang="pricing">Pricing Plans</h2>
-        <div class="pricing-container">
-            <div class="pricing-card fade-in">
-                <h3>Starter</h3>
-                <p>$0 / month</p>
-                <ul>
-                    <li>✅ Basic Features</li>
-                    <li>✅ Free Hosting</li>
-                    <li>❌ No Premium Support</li>
-                </ul>
-                <a href="#" class="cta-button">Get Started</a>
-            </div>
-            <div class="pricing-card fade-in">
-                <h3>Pro</h3>
-                <p>$10 / month</p>
-                <ul>
-                    <li>✅ All Starter Features</li>
-                    <li>✅ Custom Domain</li>
-                    <li>✅ Priority Support</li>
-                </ul>
-                <a href="#" class="cta-button">Upgrade Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS SECTION -->
-    <section id="testimonials">
-        <h2 data-lang="testimonials">What Our Users Say</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial fade-in">
-                <p>"This AI-powered site builder saved me hours of work!"</p>
-                <h3>- Alex R.</h3>
-            </div>
-            <div class="testimonial fade-in">
-                <p>"The easiest way to launch a professional website fast!"</p>
-                <h3>- Jamie S.</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 MyBrand. All rights reserved.</p>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:titus.laxa.jr@gmail.com">titus.laxa.jr@gmail.com</a></p>
+        <p>Location: San Fernando, Pampanga</p>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Titus Jr Laxa. All rights reserved.</p>
     </footer>
 
 </body>
