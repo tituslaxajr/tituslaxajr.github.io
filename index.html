@@ -3,85 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titus Jr Laxa - UX/UI Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>StewardTrack Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.17.12/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
-
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <nav>
-            <h1 class="logo">Titus Jr Laxa</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="dark-mode-toggle">🌙</button></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Bringing problems their worst nightmare.</h1>
-            <p>UX/UI Designer solving design-related problems before breakfast and after dinner.</p>
-            <a href="#portfolio" class="cta-button">View My Work</a>
-        </div>
-    </header>
-
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I have my Masters in Christian Leadership and Visual Arts. I know it's not the kind of mix that would seem to go well together. However, I'm a theologian who applies his theology in designs. No, I don't paint crosses on my hero sections, but I try to apply what is true, good, and beautiful in my work - so that the one who asks me to design will be thankful and fruitful.</p>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>Skills & Tools</h2>
-        <div class="skills-container">
-            <div class="skill-card">UX/UI Design</div>
-            <div class="skill-card">Integrating Social Media Visual Campaigns</div>
-            <div class="skill-card">Figma</div>
-            <div class="skill-card">Adobe XD</div>
-            <div class="skill-card">Photoshop</div>
-            <div class="skill-card">Illustrator</div>
-        </div>
-    </section>
-
-    <!-- PORTFOLIO SECTION -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-container">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project Name 1</h3>
-                <p>Project description goes here.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project Name 2</h3>
-                <p>Project description goes here.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:titus.laxa.jr@gmail.com">titus.laxa.jr@gmail.com</a></p>
-        <p>Location: San Fernando, Pampanga</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Titus Jr Laxa. All rights reserved.</p>
-    </footer>
-
+<body class="bg-gray-100">
+    <div id="root"></div>
+    <script type="text/babel" src="dashboard.js"></script>
 </body>
 </html>
-
